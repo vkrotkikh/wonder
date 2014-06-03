@@ -150,7 +150,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', end
 	display: block;
 	content: "";
 	position: absolute;
-	background: url(/assets/spr_arrows.png) -34px 0px no-repeat;
+	background: image-url("spr_arrows.png") -34px 0px no-repeat;
 	width: 42px;
 	height: 39px;
 	bottom: -37px;
