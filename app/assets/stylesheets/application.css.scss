@@ -76,18 +76,30 @@ table {
 
 /* fonts */
 
-/* 
+
 
 @font-face {
-    font-family: 'Georgia'; 
-    src: font-url('Georgia.eot');
-    src: font-url('Georgia.eot?#iefix') format('embedded-opentype'),
-         font-url('Georgia.woff') format('woff'),
-         font-url('Georgia.ttf') format('truetype'),
-         font-url('Georgia.svg#Georgia') format('svg');
+    font-family: 'Fangtasia'; 
+    src: font-url('Fangtasia.eot');
+    src: font-url('Fangtasia.eot?#iefix') format('embedded-opentype'),
+         font-url('Fangtasia.woff') format('woff'),
+         font-url('Fangtasia.ttf') format('truetype'),
+         font-url('Fangtasia.svg#Fangtasia') format('svg');
     font-weight: normal;
     font-style: normal;
-} */
+} 
+
+
+@font-face {
+    font-family: 'Georgia-Italic'; 
+    src: font-url('Georgia-Italic.eot');
+    src: font-url('Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+         font-url('Georgia-Italic.woff') format('woff'),
+         font-url('Georgia-Italic.ttf') format('truetype'),
+         font-url('Georgia-Italic.svg#Georgia-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
 
 @import "variables.css.scss"; 
 
@@ -96,7 +108,7 @@ table {
 
 body {
 	background:#121212;
-	font-style:italic;
+	font-family:'Georgia-Italic', serif;
 }
 
 a {
@@ -119,9 +131,10 @@ h1 {
 	margin:0 auto;
 }
 .content {
-	min-height:780px;
+	min-height:760px;
 	background: $white;
 	color:#000;
+	position:relative;
 }
 
 .site_footer {
@@ -153,18 +166,19 @@ h1 {
 	padding-top:35px;
 
 	.read_more {
-		display: block;
-		position: absolute;
-		bottom: 0;
-		background: #f26c4f;
-		width: 129px;
-		border-radius: 129px 129px 0 0;
-		padding: 31px 0 15px;
-		left: 0;
-		right: 0;
-		margin: auto;
-		z-index: 2;
-		box-shadow: 1px 0px 1px 0 rgba(0, 0, 0, 0.3);
+	font:23px normal 'Fangtasia', sans-serif;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	background: #f26c4f;
+	width: 129px;
+	border-radius: 129px 129px 0 0;
+	padding: 22px 0 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 2;
+	box-shadow: 1px 0px 1px 0 rgba(0, 0, 0, 0.3);
 	}
 
 	.read_more:before {
@@ -202,13 +216,14 @@ h1 {
 
 
 .main_menu {
-	margin-top:35px;
+	margin-top:30px;
 	li {
 		display: inline-block;
 		margin-left:55px;
 	  a {
 			text-shadow:1px 1px 2px rgba(0, 0, 0, 1);
 			font-size:$menu_link_size;
+			font-weight: bold;
 	  }
 	}
 	li:first-child {

@@ -1,17 +1,17 @@
-development:
+local: &local
   adapter: postgresql
-  database: my_database_development
-  pool: 5
-  timeout: 5000
+  username: admin
+  password: admin
+  host: localhost
+
+development:
+  <<: *local
+  database: taskman_dev
 
 test:
-  adapter: postgresql
-  database: my_database_test
-  pool: 5
-  timeout: 5000
+  <<: *local
+  database: taskman_test
 
 production:
-  adapter: postgresql
-  database: my_database_production
-  pool: 5
-  timeout: 5000
+  <<: *local
+  database: taskman_production

@@ -4,10 +4,6 @@
 
 @import "variables.css.scss"; 
 
-.content {
-	position:relative;
-}
-
 .top_part {
 	padding:80px 0 65px;
 }
@@ -38,14 +34,13 @@
 	padding:3px;
 	float:right;
 	background: #dcdcdc; /* Old browsers */
-background: -moz-linear-gradient(top,  #dcdcdc 0%, #dcdcdc 47%, #dcdcdc 47%, #ffffff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(47%,#dcdcdc), color-stop(47%,#dcdcdc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
+	background: -moz-linear-gradient(top,  #dcdcdc 0%, #dcdcdc 47%, #dcdcdc 47%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(47%,#dcdcdc), color-stop(47%,#dcdcdc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -139,7 +134,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', end
 }
 
 .main_content {
-	padding-bottom:140px;
+	min-height:260px;
+	padding-bottom:40px;
 	border-radius:0 0 38px 38px;
 	background:$white;
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
