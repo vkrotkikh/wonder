@@ -1,0 +1,417 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+/* reset styles*/
+/* line 19, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 35, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 45, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 48, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+body {
+  line-height: 1;
+}
+
+/* line 51, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 54, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 58, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 62, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 68, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 73, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.cf:after {
+  clear: both;
+}
+
+/* fonts */
+/* 
+
+@font-face {
+    font-family: 'Georgia'; 
+    src: font-url('Georgia.eot');
+    src: font-url('Georgia.eot?#iefix') format('embedded-opentype'),
+         font-url('Georgia.woff') format('woff'),
+         font-url('Georgia.ttf') format('truetype'),
+         font-url('Georgia.svg#Georgia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+/* custom variables */
+/* main layout styles */
+/* line 98, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+body {
+  background: #121212;
+  font-style: italic;
+}
+
+/* line 103, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 107, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* line 112, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* line 118, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* line 122, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.content {
+  min-height: 780px;
+  background: white;
+  color: #000;
+}
+
+/* line 128, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.site_footer {
+  min-height: 360px;
+}
+
+/* line 132, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.one_half {
+  width: 50%;
+  float: left;
+  padding: 0 0 0 2%;
+}
+
+/* line 138, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.one_half:first-child {
+  padding: 0 2% 0 0;
+}
+
+/* header */
+/* line 147, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.site_header {
+  min-height: 550px;
+  position: relative;
+  text-align: center;
+  color: white;
+  position: relative;
+  background: url(/assets/bg_divider_obl.png) bottom repeat-x;
+  padding-top: 35px;
+}
+/* line 156, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.site_header .read_more {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #f26c4f;
+  width: 129px;
+  border-radius: 129px 129px 0 0;
+  padding: 31px 0 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+  box-shadow: 1px 0px 1px 0 rgba(0, 0, 0, 0.3);
+}
+/* line 171, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.site_header .read_more:before {
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  content: "";
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #f26c4f;
+  top: -7px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 187, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.site_header:after {
+  display: block;
+  content: "";
+  background: url(/assets/clouds.png) bottom no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 842px;
+  height: 166px;
+}
+
+/* line 200, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.site_footer {
+  background: url(/assets/bg_divider_obl.png) top repeat-x;
+}
+
+/* line 205, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.main_menu {
+  margin-top: 35px;
+}
+/* line 207, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.main_menu li {
+  display: inline-block;
+  margin-left: 55px;
+}
+/* line 210, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.main_menu li a {
+  text-shadow: 1px 1px 2px black;
+  font-size: 12px;
+}
+/* line 215, /home/vadim/projects/wonder/app/assets/stylesheets/application.css.scss */
+.main_menu li:first-child {
+  margin-left: 0;
+}
+/* custom variables */
+/* line 7, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.content {
+  position: relative;
+}
+
+/* line 11, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.top_part {
+  padding: 80px 0 65px;
+}
+
+/* line 15, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.d_corner {
+  background: #fd7200 url(/assets/ico_envelope.png) center center no-repeat;
+  width: 146px;
+  height: 124px;
+  position: relative;
+  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* line 23, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.d_corner:after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(/assets/spr_arrows.png) -12px 0px no-repeat;
+  width: 21px;
+  height: 20px;
+  bottom: -18px;
+  left: 12px;
+}
+
+/* line 35, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.d_awesome {
+  width: 110px;
+  height: 92px;
+  padding: 3px;
+  float: right;
+  background: #dcdcdc;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, gainsboro 0%, gainsboro 47%, gainsboro 47%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, gainsboro), color-stop(47%, gainsboro), color-stop(47%, gainsboro), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, gainsboro 0%, gainsboro 47%, gainsboro 47%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, gainsboro 0%, gainsboro 47%, gainsboro 47%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, gainsboro 0%, gainsboro 47%, gainsboro 47%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, gainsboro 0%, gainsboro 47%, gainsboro 47%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dcdcdc', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* line 52, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.d_awesome_inner {
+  height: 100%;
+  position: relative;
+  background: url(/assets/pat_search.png);
+  box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* line 59, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.d_awesome_inner:before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(/assets/ico_magnifier.png) no-repeat;
+  width: 24px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 73, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.soc_block {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+/* line 77, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.soc_block p {
+  font-size: 14px;
+}
+
+/* line 82, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.soc_icons_container {
+  width: 220px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 88, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.soc_icons_container a {
+  display: inline-block;
+  width: 31px;
+  height: 32px;
+  background: url(/assets/spr_social.png) 0 0;
+  position: relative;
+  z-index: 2;
+}
+/* line 97, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.soc_icons_container .ico_soc_rss {
+  background-position: 32px 32px;
+  margin-left: 16px;
+}
+
+/* line 103, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.soc_icons_container:before {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(/assets/spr_bg_social.png) top;
+  height: 6px;
+  width: 53px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* line 116, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.soc_icons_container:after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(/assets/spr_bg_social.png) bottom;
+  height: 6px;
+  width: 53px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* line 129, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.black_box {
+  position: absolute;
+  display: block;
+  background: url(/assets/box_black.png) no-repeat;
+  width: 168px;
+  height: 178px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -80px;
+}
+
+/* line 141, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.main_content {
+  padding-bottom: 140px;
+  border-radius: 0 0 38px 38px;
+  background: white;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* line 149, /home/vadim/projects/wonder/app/assets/stylesheets/home.css.scss */
+.main_content:after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(/assets/spr_arrows.png) -34px 0px no-repeat;
+  width: 42px;
+  height: 39px;
+  bottom: -37px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* custom variables */
