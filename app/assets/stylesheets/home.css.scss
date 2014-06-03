@@ -1,0 +1,160 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables.css.scss"; 
+
+.content {
+	position:relative;
+}
+
+.top_part {
+	padding:80px 0 65px;
+}
+
+.d_corner {
+	background:#FD7200 image-url("ico_envelope.png") center center no-repeat;
+	width:146px;
+	height:124px;
+	position:relative;
+	box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+.d_corner:after {
+	display: block;
+	content: "";
+	position: absolute;
+	background: image-url("spr_arrows.png") -12px 0px no-repeat;
+	width: 21px;
+	height: 20px;
+	bottom: -18px;
+	left: 12px;
+}
+
+
+.d_awesome {
+	width:110px;
+	height:92px;
+	padding:3px;
+	float:right;
+	background: #dcdcdc; /* Old browsers */
+background: -moz-linear-gradient(top,  #dcdcdc 0%, #dcdcdc 47%, #dcdcdc 47%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(47%,#dcdcdc), color-stop(47%,#dcdcdc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #dcdcdc 0%,#dcdcdc 47%,#dcdcdc 47%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.d_awesome_inner {
+	height:100%;
+	position:relative;
+	background: image-url("pat_search.png");
+	box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.6);
+}
+
+.d_awesome_inner:before {
+	display: block;
+	content: "";
+	position: absolute;
+	background: image-url("ico_magnifier.png") no-repeat;
+	width:24px;
+	height:20px;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+.soc_block {
+	text-align:center;
+	margin-top:50px;
+	position:relative;
+	p {
+		font-size:14px;
+	}
+}
+
+.soc_icons_container {
+	width:220px;
+	margin:0 auto;
+	position:relative;
+	margin-bottom:10px;
+
+  a {
+		display:inline-block;
+		width: 31px;
+		height: 32px;
+		background:  image-url("spr_social.png") 0 0;
+		position:relative;
+		z-index:2;
+	}
+
+	.ico_soc_rss {
+		background-position:32px 32px;
+		margin-left:16px;
+	}
+}
+
+.soc_icons_container:before {
+	display:block;
+	content:"";
+	position:absolute;
+	background:  image-url("spr_bg_social.png") top;
+	height:6px;
+	width:53px;
+	left:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+
+.soc_icons_container:after {
+	display:block;
+	content:"";
+	position:absolute;
+	background:  image-url("spr_bg_social.png") bottom;
+	height:6px;
+	width:53px;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+
+.black_box {
+	position:absolute;
+	display:block;
+	background:  image-url("box_black.png") no-repeat;
+	width:168px;
+	height:178px;
+	left:0;
+	right:0;
+	margin:auto;
+	bottom:-80px;
+}
+
+.main_content {
+	padding-bottom:140px;
+	border-radius:0 0 38px 38px;
+	background:$white;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	position:relative;
+}
+
+.main_content:after {
+	display: block;
+	content: "";
+	position: absolute;
+	background: url(/assets/spr_arrows.png) -34px 0px no-repeat;
+	width: 42px;
+	height: 39px;
+	bottom: -37px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}

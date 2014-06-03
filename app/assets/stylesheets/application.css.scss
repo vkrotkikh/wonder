@@ -1,0 +1,217 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+/* reset styles*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* fonts */
+
+/* 
+
+@font-face {
+    font-family: 'Georgia'; 
+    src: font-url('Georgia.eot');
+    src: font-url('Georgia.eot?#iefix') format('embedded-opentype'),
+         font-url('Georgia.woff') format('woff'),
+         font-url('Georgia.ttf') format('truetype'),
+         font-url('Georgia.svg#Georgia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@import "variables.css.scss"; 
+
+/* main layout styles */
+
+
+body {
+	background:#121212;
+	font-style:italic;
+}
+
+a {
+	cursor:pointer;
+}
+
+p {
+	font-size:$defaut_font_size;
+	line-height:2;
+}
+
+h1 {
+	font-size:18px;
+	margin-bottom:15px;
+	line-height:1.5;
+}
+
+.wrapper {
+	max-width: $max_main_wrapp_size;
+	margin:0 auto;
+}
+.content {
+	min-height:780px;
+	background: $white;
+	color:#000;
+}
+
+.site_footer {
+	min-height:360px;
+}
+
+.one_half {
+	width:50%;
+	float:left;
+  padding:0 0 0 2%;
+}
+
+.one_half:first-child {
+  padding:0 2% 0 0;
+}
+
+
+/* header */
+
+
+
+.site_header {
+	min-height:550px;
+	position:relative;
+	text-align:center;
+	color:$white;
+	position:relative;
+	background: image-url("bg_divider_obl.png") bottom repeat-x;
+	padding-top:35px;
+
+	.read_more {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		background: #f26c4f;
+		width: 129px;
+		border-radius: 129px 129px 0 0;
+		padding: 31px 0 15px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 2;
+		box-shadow: 1px 0px 1px 0 rgba(0, 0, 0, 0.3);
+	}
+
+	.read_more:before {
+		display: block;
+		position: absolute;
+		height:0;
+		width:0;
+		content: "";
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 8px solid #f26c4f;
+		top: -7px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
+.site_header:after {
+	display:block;
+	content:"";
+	background: image-url("clouds.png") bottom no-repeat;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	width:842px;
+	height:166px;
+}
+
+.site_footer {
+	background: image-url("bg_divider_obl.png") top repeat-x;
+}
+
+
+.main_menu {
+	margin-top:35px;
+	li {
+		display: inline-block;
+		margin-left:55px;
+	  a {
+			text-shadow:1px 1px 2px rgba(0, 0, 0, 1);
+			font-size:$menu_link_size;
+	  }
+	}
+	li:first-child {
+		margin-left:0;
+	}
+}
